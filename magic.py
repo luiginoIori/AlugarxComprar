@@ -1,3 +1,4 @@
+import torch
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -9,7 +10,7 @@ from time import sleep
 import matplotlib.pyplot as plt, mpld3
 import math
 import altair as alt
-
+torch.classes.__path__ = []
 painel = ("Avarias","Financiamento", "Residual")
 carros = ("Mobi", 66000.00 , "Strada", 89990.00)
 tipos_carros = ["PickUp","Popular", "Caminhões"]
