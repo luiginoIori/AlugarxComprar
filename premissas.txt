@@ -1,0 +1,14 @@
+nome:valor
+1º Licenciamento: 750.00
+Licenciamento: 200.00
+IPVA-Strada: 0.02
+IPVA: 0.04
+Seguro: 0.03
+Reajuste: 0.05
+Manutencao caminhonete: 490.00
+Manutençao Popular: 290.00
+Onix: 2790.00
+Popular: 2450.00
+PickUp: 3240.00
+Taxa Aluguel: 0.04
+Avarias: 0.015
