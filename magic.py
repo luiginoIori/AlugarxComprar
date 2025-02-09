@@ -129,7 +129,7 @@ if tela == 1:
       x= alt.X("Prazo", axis=alt.Axis(grid=False)),
       y= alt.Y("Parcela",
       axis=alt.Axis(grid=False),scale=alt.Scale(domain=(1000,3800))),
-      tooltip= ["Prazo","Parcela","Alugar"],   
+      tooltip= ["Prazo","Parcela"],   
       
    ).properties(
       width=1000,
@@ -143,7 +143,7 @@ if tela == 1:
       ).encode(
       x= alt.X("Prazo"), 
       y= alt.Y("Alugar"),
-      tooltip= ["Prazo","Parcela","Alugar"]
+      tooltip= ["Prazo","Alugar"]
    )
 
    st.altair_chart(graf_linha_A+graf_linha_B,use_container_width=True)
