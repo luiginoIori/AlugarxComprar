@@ -167,17 +167,17 @@ if tela == 1:
    col2.subheader("Comprar" )
    result_alugar_comprar = (((soma_comprar-soma_aluguel)/soma_aluguel)*100)
    if result_alugar_comprar >=0 :
-      col3.subheader("Comprar Melhor Alugar " )
-   else :
       col3.subheader("Alugar Melhor Comprar " )
+   else :
+      col3.subheader("Comprar Melhor Alugar " )
    
    col1, col2, col3 = st.columns(3,vertical_alignment="top" , border=True)
    col1.subheader(":car: " + str(f'R$ {soma_aluguel:,.2f}') )
    col2.subheader(":car: " + str(f'R$ {soma_comprar:,.2f}') )
    if result_alugar_comprar >=0 :
-      col3.subheader("Comprar " + str('% 0.2f' % (((soma_comprar-soma_aluguel)/soma_aluguel)*100)) + '%' + " Alugar")
+      col3.subheader("Alugar " + str('% 0.2f' % (((soma_comprar-soma_aluguel)/soma_aluguel)*100)) + '%' + " Comprar ")
    else :
-      col3.subheader("Alugar " + str('% 0.2f' % (((soma_comprar-soma_aluguel)/soma_aluguel)*100)) + '%' + " Comprar")
+      col3.subheader("Comprar " + str('% 0.2f' % (((soma_comprar-soma_aluguel)/soma_aluguel)*100)) + '%' + " Alugar")
       
    valor_residual = soma_comprar-(valor*residual)
    
@@ -192,18 +192,18 @@ if tela == 1:
    col3.subheader("Menos "+ str(int(residual*100))+ " % Residual" )
    result_alugar_comprar = (((soma_comprar-soma_aluguel)/soma_aluguel)*100)
    if (((valor_residual-soma_aluguel)/soma_aluguel)*100) >=0 :
-      col4.subheader("Melhor Comprar" )
+      col4.subheader("Comprar Melhor Alugar" )
    else :
-      col4.subheader("Melhor Alugar " )
+      col4.subheader("Alugar Melhor Comprar " )
    
    col1, col2, col3, col4 = st.columns([1,1,1.2,1.8], vertical_alignment="center", border=True )
    col1.subheader(":car: " + str(f'R$ {soma_aluguel:,.2f}') )
    col2.subheader(":car: " + str(f'R$ {soma_comprar:,.2f}') )
    col3.subheader(":car: " + str(f'R$ {valor_residual:,.2f}') )
    if (((valor_residual-soma_aluguel)/soma_aluguel)*100) >=0 :
-      col4.subheader("Comprar " + str('% 0.2f' % (((valor_residual-soma_aluguel)/soma_aluguel)*100)) + '%' + " Alugar")
-   else :
       col4.subheader("Alugar " + str('% 0.2f' % (((valor_residual-soma_aluguel)/soma_aluguel)*100)) + '%' + " Comprar")
+   else :
+      col4.subheader("Comprar " + str('% 0.2f' % (((valor_residual-soma_aluguel)/soma_aluguel)*100)) + '%' + " Alugar")
    pd.set_option("display.precision",2)
    def formatar(valor):
       return "$ {:,.2f}".format(valor)
