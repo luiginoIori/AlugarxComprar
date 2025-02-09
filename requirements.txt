@@ -1,27 +1,8 @@
 
-accelerate==0.28.0
 altair==5.2.0
-appdirs==1.4.4
-attrs==23.2.0
-beautifulsoup4==4.12.3
-blinker==1.7.0
-cachetools==5.3.3
-certifi==2024.2.2
-charset-normalizer==3.3.2
-click==8.1.7
-colorama==0.4.6
-contourpy==1.2.0
-cycler==0.12.1
-Cython==3.0.9
-diffusers==0.26.3
-et-xmlfile==1.1.0
-filelock==3.13.1
+
 fonttools==4.49.0
 frozendict==2.4.0
-fsspec==2024.2.0
-func-timeout==4.3.5
-fuzzypy==0.4
-geneticalgorithm==1.0.2
 gitdb==4.0.11
 GitPython==3.1.42
 html5lib==1.1
@@ -77,23 +58,5 @@ soupsieve==2.5
 statsmodels==0.14.1
 streamlit==1.32.1
 streamlit-aggrid==0.3.4.post3
-sympy==1.12
-tenacity==8.2.3
-threadpoolctl==3.3.0
-tokenizers==0.15.2
-toml==0.10.2
-toolz==0.12.1
 
-torchaudio==2.2.1+cu118
-torchvision==0.17.1+cu118
-tornado==6.4
-tqdm==4.66.2
-transformers==4.38.2
-typing_extensions==4.10.0
-tzdata==2024.1
-urllib3==2.2.1
-watchdog==4.0.0
-webencodings==0.5.1
-yfinance==0.2.37
-zipp==3.18.0
 
