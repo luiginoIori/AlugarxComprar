@@ -162,7 +162,7 @@ if tela == 1:
 
 
    
-  col1, col2, col3 = st.columns(3,vertical_alignment="top", border=True )
+   col1, col2, col3 = st.columns(3,vertical_alignment="top", border=True )
    col1.subheader("Alugar " )
    col2.subheader("Comprar" )
    result_alugar_comprar = (((soma_comprar-soma_aluguel)/soma_aluguel)*100)
