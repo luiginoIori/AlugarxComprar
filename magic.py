@@ -192,9 +192,9 @@ if tela == 1:
    col3.subheader("Menos "+ str(int(residual*100))+ " % Residual" )
    result_alugar_comprar = (((soma_comprar-soma_aluguel)/soma_aluguel)*100)
    if (((valor_residual-soma_aluguel)/soma_aluguel)*100) >=0 :
-      col4.subheader("Comprar Melhor Alugar" )
+      col4.subheader("Alugar Melhor Comprar" )
    else :
-      col4.subheader("Alugar Melhor Comprar " )
+      col4.subheader("Comprar Melhor Alugar " )
    
    col1, col2, col3, col4 = st.columns([1,1,1.2,1.8], vertical_alignment="center", border=True )
    col1.subheader(":car: " + str(f'R$ {soma_aluguel:,.2f}') )
