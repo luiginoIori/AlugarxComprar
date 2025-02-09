@@ -1,4 +1,4 @@
-
+st-annotated-text==4.0.2
 altair==5.2.0
 mpld3==0.5.10
 fonttools==4.49.0
