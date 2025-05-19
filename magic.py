@@ -192,7 +192,7 @@ if tela == 1:
    col1, col2, col3,col4 = st.columns([1,1,1.2,1.8],vertical_alignment="top", border=True )
    col1.subheader("Alugar " )
    col2.subheader("Comprar" )
-   col3.subheader("Menos "+ str(int(residual*100))+ " % Residual" + str(int(valor_residual)) )
+   col3.subheader("Menos "+ str(int(residual*100))+ " % Residual - " + str(int(soma_comprar)) )
    result_alugar_comprar = (((soma_comprar-soma_aluguel)/soma_aluguel)*100)
    if soma_aluguel > (soma_comprar-valor_residual) :
       col4.subheader("Melhor Comprar" )
