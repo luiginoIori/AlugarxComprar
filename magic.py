@@ -64,6 +64,8 @@ with st.sidebar:
       alugar=[]
       avaria=valor_aluguel*(avaria/100)
       taxa=taxa/100
+      v_ipva=v_ipva/100
+      v_seguro=v_seguro/100
       reajuste=reajuste/100
       residual = residual/100
       manutencao = (km * manut)/12
