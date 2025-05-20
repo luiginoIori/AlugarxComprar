@@ -58,7 +58,7 @@ with st.sidebar:
       residual = st.number_input("Residual para revenda %", min_value=2.0, max_value=100.0, value=50.0)      
       cont=0
       alugar=[]
-      avaria=avaria/100
+      avaria=valor_aluguel*(avaria/100)
       taxa=taxa/100
       reajuste=reajuste/100
       residual = residual/100
@@ -87,7 +87,7 @@ with st.sidebar:
          for i in range(int(prazo)):
             x=valor_alu           
             if i % 12 == 0 and i > 0:               
-               valor_alu=valor_alu+(valor_alu*reajuste)+avaria
+               valor_alu=valor_alu+(valor_alu*reajuste)
                y=valor_alu
                alugar.append(y)
                continue
