@@ -47,7 +47,7 @@ with st.sidebar:
       veiculo = st.selectbox("Veiculo ",tipos_carros)      
       valor = st.number_input("Valor", min_value=50000, max_value=250000, value=90000)
       prazo = st.slider("Prazo Financiamento tabela Price", 12, 60, 48)
-      v_ipva = st.number_input("IPVA %", min_value=1.0, max_value=50.0, value=3.0)
+      v_ipva = st.number_input("IPVA %", min_value=0.0, max_value=50.0, value=3.0)
       v_seguro = st.number_input("Seguro %", min_value=0.0, max_value=50.0, value=4.0)
       km = st.number_input("Média de KM rodados por ANo",min_value=5000, max_value=80000, value=24000)
       pneus = st.number_input("Valor troca de 4 pneus",min_value=500, max_value=8000, value=1800)
