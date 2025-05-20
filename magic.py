@@ -110,10 +110,10 @@ with st.sidebar:
                   if price_par[0]=="Popular":
                      x=x+((valor*float(premissa["IPVA"]))/4)
                      x=x+((valor*float(premissa["Seguro"]))/10)
-               if cont>3<=10:     
+               if cont>4<=11:     
                   x=x+((valor*float(premissa["Seguro"]))/10) 
                cont = cont + 1
-               if cont == 10 :
+               if cont == 11 :
                   cont = 0              
             parcelas.append(x)
             prazo_fin.append(i+1)
