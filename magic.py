@@ -87,8 +87,8 @@ with st.sidebar:
          for i in range(int(prazo)):
             x=valor_alu           
             if i % 12 == 0 and i > 0:               
-               valor_alu=valor_alu+(valor_alu*reajuste)
-               y=valor_alu+((valor_alu*avaria)*12)
+               valor_alu=valor_alu+(valor_alu*reajuste)+avaria
+               y=valor_alu
                alugar.append(y)
                continue
             alugar.append(x)
