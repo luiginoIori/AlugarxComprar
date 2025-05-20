@@ -49,7 +49,7 @@ with st.sidebar:
       prazo = st.slider("Prazo Financiamento tabela Price", 12, 60, 48)
       v_ipva = st.number_input("IPVA % 4 parcelas", min_value=0.0, max_value=50.0, value=2.0)
       v_seguro = st.number_input("Seguro % 10 parcelas", min_value=0.0, max_value=50.0, value=4.0)
-      km = st.number_input("Média de KM rodados por ANo",min_value=5000, max_value=80000, value=24000)
+      km = st.number_input("Média de KM rodados por Ano",min_value=5000, max_value=80000, value=24000)
       pneus = st.number_input("Valor troca de 4 pneus",min_value=500, max_value=8000, value=1800)
       ano= ((pneus*((km*(prazo/12))/50000))/((km/12)*prazo))+0.1
       print(ano)
