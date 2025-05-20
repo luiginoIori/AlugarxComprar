@@ -132,7 +132,7 @@ if tela == 1:
       ).encode(
       x= alt.X("Prazo", axis=alt.Axis(grid=False), title='Category'),
       y= alt.Y("Parcela",               
-      axis=alt.Axis(grid=False),scale=alt.Scale(domain=(2200,4800))),               
+      axis=alt.Axis(grid=False),scale=alt.Scale(domain=(2500,4300))),               
       tooltip= ["Prazo","Parcela"],   
       
    ).properties(
