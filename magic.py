@@ -44,7 +44,7 @@ with st.sidebar:
       st.title(":red[Comprar ou Alugar] :car:")      
       veiculo = st.selectbox("Veiculo ",tipos_carros)      
       valor = st.number_input("Valor", min_value=50000, max_value=250000, value=90000)
-      prazo = st.slider("Prazo Financiamento", 12, 60, 48)
+      prazo = st.slider("Prazo Financiamento tabela Price", 12, 60, 48)
       km = st.number_input("Média de KM rodados por ANo",min_value=5000, max_value=80000, value=24000)
       pneus = st.number_input("Valor troca de 4 pneus",min_value=500, max_value=8000, value=1800)
       ano= ((pneus*((km*(prazo/12))/50000))/((km/12)*prazo))+0.1
@@ -53,7 +53,7 @@ with st.sidebar:
        
       taxa = st.number_input("Taxa %", min_value=1.0, max_value=50.0, value=2.1)  
       valor_aluguel = st.number_input("Valor Aluguel", min_value=1000, max_value=6000, value=2900) 
-      avaria = st.number_input("Avaria mensal veiculo alugado %", min_value=0.8, max_value=50.0, value=2.0) 
+      avaria = st.number_input("Avaria mensal veiculo alugado % valor aluguel", min_value=0.8, max_value=50.0, value=2.0) 
       reajuste = st.number_input("Reajuste anual aluguel %", min_value=2.0, max_value=50.0, value=4.0)
       residual = st.number_input("Residual para revenda %", min_value=2.0, max_value=100.0, value=50.0)      
       cont=0
