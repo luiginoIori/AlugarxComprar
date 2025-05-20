@@ -52,7 +52,7 @@ with st.sidebar:
       manut = st.number_input("Valor de Manutenção por KM Rodado",min_value=0.010, max_value=2.00, value=ano)     
        
       taxa = st.number_input("Taxa %", min_value=1.0, max_value=50.0, value=2.1)  
-      valor_aluguel = st.number_input("Valor Aluguel", min_value=1000, max_value=6000, value=2500) 
+      valor_aluguel = st.number_input("Valor Aluguel", min_value=1000, max_value=6000, value=2900) 
       avaria = st.number_input("Avaria mensal veiculo alugado %", min_value=0.8, max_value=50.0, value=10.0) 
       reajuste = st.number_input("Reajuste anual aluguel %", min_value=2.0, max_value=50.0, value=4.0)
       residual = st.number_input("Residual para revenda %", min_value=2.0, max_value=100.0, value=50.0)      
