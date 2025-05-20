@@ -85,7 +85,7 @@ with st.sidebar:
          x=0
          
          for i in range(int(prazo)):
-            x=valor_alu           
+            x=valor_alu + avaria         
             if i % 12 == 0 and i > 0:               
                valor_alu=valor_alu+(valor_alu*reajuste)
                y=valor_alu
