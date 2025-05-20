@@ -88,7 +88,7 @@ with st.sidebar:
             x=valor_alu + avaria         
             if i % 12 == 0 and i > 0:               
                valor_alu=valor_alu+(valor_alu*reajuste)
-               y=valor_alu
+               y=valor_alu + avaria
                alugar.append(y)
                continue
             alugar.append(x)
