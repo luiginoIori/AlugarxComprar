@@ -11,4 +11,4 @@ Onix: 2790.00
 Popular: 2450.00
 PickUp: 3240.00
 Taxa Aluguel: 0.04
-Avarias: 0.015
+Avarias: 0.10
