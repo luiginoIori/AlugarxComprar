@@ -38,6 +38,7 @@ for i in range(int(finan["Prazo"])):
    dados = {"Prazo" : prazo_fin, "Parcela" : parcelas }
 prazos = ["48","12","18","24","36","48","60"]
 IPVA = float(premissa["IPVA-Strada"])
+print(IPVA)
 Seguro = float(premissa["Seguro"])
 with st.sidebar:  
       tela = 0
