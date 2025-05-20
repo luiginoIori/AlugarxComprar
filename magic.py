@@ -37,7 +37,8 @@ for i in range(int(finan["Prazo"])):
    prazo_fin.append(i+1)
    dados = {"Prazo" : prazo_fin, "Parcela" : parcelas }
 prazos = ["48","12","18","24","36","48","60"]
-
+IPVA = float(premissa["IPVA-Strada"])
+Seguro = float(premissa["Seguro"])
 with st.sidebar:  
       tela = 0
       
@@ -45,6 +46,8 @@ with st.sidebar:
       veiculo = st.selectbox("Veiculo ",tipos_carros)      
       valor = st.number_input("Valor", min_value=50000, max_value=250000, value=90000)
       prazo = st.slider("Prazo Financiamento tabela Price", 12, 60, 48)
+      v_ipva = st.number_input("IPVA %", min_value=1.0, max_value=50.0, value=IPVA)
+      v_seguro = st.number_input("Seguro %", min_value=1.0, max_value=50.0, value=Seguro)
       km = st.number_input("Média de KM rodados por ANo",min_value=5000, max_value=80000, value=24000)
       pneus = st.number_input("Valor troca de 4 pneus",min_value=500, max_value=8000, value=1800)
       ano= ((pneus*((km*(prazo/12))/50000))/((km/12)*prazo))+0.1
