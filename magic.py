@@ -106,12 +106,12 @@ with st.sidebar:
                if cont <=4 :
                   if price_par[0]=="PickUp":
                      x=x+((valor*float(premissa["IPVA-Strada"]))/4)                     
-                     x=x+((valor*float(premissa["Seguro"]))/10)
+                     x=x+((valor*float(premissa["Seguro"]))/11)
                   if price_par[0]=="Popular":
                      x=x+((valor*float(premissa["IPVA"]))/4)
-                     x=x+((valor*float(premissa["Seguro"]))/10)
+                     x=x+((valor*float(premissa["Seguro"]))/11)
                if cont>4<=10:     
-                  x=x+((valor*float(premissa["Seguro"]))/10) 
+                  x=x+((valor*float(premissa["Seguro"]))/11) 
                cont = cont + 1
                if cont == 10 :
                   cont = 0              
