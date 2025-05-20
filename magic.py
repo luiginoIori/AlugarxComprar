@@ -37,8 +37,8 @@ for i in range(int(finan["Prazo"])):
    prazo_fin.append(i+1)
    dados = {"Prazo" : prazo_fin, "Parcela" : parcelas }
 prazos = ["48","12","18","24","36","48","60"]
-IPVA = float(premissa["IPVA-Strada"])
-print(IPVA)
+IPVA = int(premissa["IPVA-Strada"])
+
 Seguro = float(premissa["Seguro"])
 with st.sidebar:  
       tela = 0
