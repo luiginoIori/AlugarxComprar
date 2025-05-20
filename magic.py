@@ -110,7 +110,7 @@ with st.sidebar:
                   if price_par[0]=="Popular":
                      x=x+((valor*float(premissa["IPVA"]))/4)
                      x=x+((valor*float(premissa["Seguro"]))/10)
-               if cont>4<=11:     
+               if cont>3<=10:     
                   x=x+((valor*float(premissa["Seguro"]))/10) 
                cont = cont + 1
                if cont == 10 :
